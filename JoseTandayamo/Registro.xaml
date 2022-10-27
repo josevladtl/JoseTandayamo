@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JoseTandayamo.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" Text=""  FontSize="18" TextColor="Blue" HorizontalOptions="End"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Center"  FontSize="18" HorizontalOptions="Center"/>
+                <Entry x:Name="txtNombre" Placeholder="Ingrese nombre" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Monto inicial" Grid.Row="2" VerticalTextAlignment="Center" Grid.Column="0" FontSize="18" HorizontalOptions="Center"/>
+                <Entry x:Name="txtMonto" Keyboard="Numeric" Placeholder="Ingrese monto" Grid.ColumnSpan="2" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Pago mensual" Grid.Row="4" TextColor="Black" Grid.Column="0" FontSize="18" HorizontalOptions="Center"/>
+                <Label x:Name="lblPagoMensual" Text="" TextColor="Red" Grid.Row="4" Grid.Column="1" FontSize="18" HorizontalOptions="Center"/>
+                <Button x:Name="btnCalcular" Text="Calcular" Grid.Row="4" Grid.Column="2" Clicked="btnCalcular_Clicked"/>
+                <Button x:Name="btnGuardar" Text="Guardar" Grid.Row="6" Grid.Column="1" Clicked="btnGuardar_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

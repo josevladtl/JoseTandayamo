@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JoseTandayamo.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" Text=""  FontSize="18" TextColor="Blue" HorizontalOptions="End"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre estudiante" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="0" VerticalTextAlignment="Center"  FontSize="18" HorizontalOptions="Center"/>
+                <Label x:Name="lblNombreEstudiante" TextColor="Black" Text="" Grid.Row="1" Grid.Column="2" VerticalTextAlignment="Center"  FontSize="18" HorizontalOptions="Center"/>
+
+                <Label Text="TOTAL A PAGAR" Grid.Row="2" Grid.ColumnSpan="2" VerticalTextAlignment="Center" Grid.Column="0" FontSize="18" HorizontalOptions="Center"/>
+                <Label x:Name="lblTotalAPagar" Text="" TextColor="Black" Grid.Row="2" VerticalTextAlignment="Center" Grid.Column="2" FontSize="18" HorizontalOptions="Center"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
